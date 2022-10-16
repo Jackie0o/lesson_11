@@ -1,0 +1,209 @@
+/* ====================== Connect the Lato font from Google fonts ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;900&display=swap');
+
+/* ====================== CCS Properties Home Work=============================== */
+html,
+body {
+	height: 100%;
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Inconsolata', monospace;
+	font-size: 30px;
+	line-height: 26px;
+	color: #fff;
+}
+[class*="__container"] {
+	max-width: 1230px;
+	margin: 0 auto;
+}
+[class*="__container-mini"] {
+	max-width: 810px;
+	margin: 0 auto;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	/* overflow: hidden; */
+	position: relative;
+	min-height: 100%;
+}
+.header {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background: transparent;
+	z-index: 100;
+}
+.header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__logo {
+	max-width: 100px;
+}
+.header__logo img {
+	max-width: 100%;
+}
+.header__menu {
+	display: flex;
+}
+.menu-item {
+	position: relative;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 8px;
+}
+.menu-item:not(:last-child) {
+	margin: 0 40px 0 0;
+}
+.sub-menu {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	top: 55px;
+	transition: all 0.3s ease 0s;
+}
+.menu-item:hover .sub-menu {
+	opacity: 100;
+	visibility: visible;
+	top: 35px;
+}
+.main {
+	flex: 1 1 auto;
+}
+.main__intro {
+	min-height: 100vh;
+	background: url(../img/road_sea.png) bottom left / cover no-repeat;
+}
+.main__position {
+	background: url(../img/beach.webp) bottom left / cover no-repeat;
+	min-height: 100vh;
+}
+.main__position-more {
+	background: url(../img/beach_safety.jpg) bottom left / cover no-repeat;
+	min-height: 100vh;
+}
+.main__intro {
+	position: relative;
+}
+.car__container-mini {
+	position: fixed;
+	top: 350px;
+	left: 200px;
+	height: 500px;
+	width: 1000px;
+	z-index: 2;
+}
+.car__bottom {
+	position: absolute;
+	left: 27px;
+	bottom: 40px;
+	z-index: 2;
+}
+.car__top {
+	position: absolute;
+	left: 30px;
+	bottom: 136px;
+}
+.car__front-bumper {
+	position: absolute;
+	right: 112px;
+	bottom: 50px;
+}
+.car__rear-bumper {
+	position: absolute;
+	left: 14px;
+	bottom: 36px;
+	z-index: 3;
+}
+.car__shadow {
+	position: absolute;
+	left: 65px;
+	bottom: 45px;
+}
+.car__shortboard {
+	position: absolute;
+	left: 85px;
+	top: 150px;
+}
+.wheel {
+	position: absolute;
+	left: 96px;
+	bottom: 105px;
+}
+.wheel-item {
+	position: absolute;
+	width: 105px;
+	height: 105px;
+}
+.wheel-item:first-child {
+	z-index: 1;
+}
+.wheel-item:last-child {
+	z-index: 2;
+}
+.car__container-mini .wheel-item:last-child {
+	left: 386px
+}
+.wheel__tire {
+	position: absolute;
+	border-radius: 50%;
+	width: 105px;
+	height: 105px;
+	background: radial-gradient(circle, rgba(0,0,0,1) 28%, rgba(65,63,60,1) 79%);
+}
+.wheel__cap {
+	position: absolute;
+	border-radius: 50%;
+	width: 65px;
+	height: 65px;
+	background: rgb(196, 192, 192);
+	top: 19%;
+	left: 19%;
+}
+.wheel__cap::after {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	border: 2px solid rgb(145, 144, 144);
+	top: 8%;
+	left: 8%;
+}
+.wheel__cap::before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	border: 1px solid rgb(145, 144, 144);
+	background: rgb(109, 108, 108);
+	top: 15%;
+	left: 15%;
+}
+.main__position {
+	position: relative;
+}
+.position__logo {
+	max-width: 14%;
+	position: sticky;
+	top: 0px;
+	left: 410px;
+}
+.footer {
+	text-align: center;
+	background: transparent;
+	color: #fff;
+	margin: -70px 0 0 0;
+}
+.footer__title {
+	display: inline-block;
+	padding: 22px;
+}
+.footer__link img{
+	max-width: 70px;
+}
